@@ -30,7 +30,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '3.3.7'
 # User Paperclip for image upload
 gem 'paperclip', '4.3.6'
-
+# gem 'devise',               '~> 4.3.0'
+gem 'devise', git: 'https://github.com/plataformatec/devise' #, ref: '88e9a85'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
