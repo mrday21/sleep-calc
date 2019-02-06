@@ -1,0 +1,17 @@
+<%= form_for(sleep_calc) do |f| %>
+  <% if sleep_calc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sleep_calc.errors.count, "error") %> prohibited this sleep_calc from being saved:</h2>
+
+      <ul>
+      <% sleep_calc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

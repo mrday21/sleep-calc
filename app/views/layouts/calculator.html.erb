@@ -9,12 +9,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
     <body>
-      <h1>Hello</h1>
+      <h1>Welcome to My Sleep Calculator</h1>
       <p id="demo">Try My Sleep Calculator</p>
-        <button type="button" onclick="Sleep Calculator()">
-      <%= link_to "Try It", calculator_path %>
-      </button>
+        <button type="button" onclick="Sleep Calculator()">Try it</button>
+      <script src="Sleep Calculator"></script>
       
+  <%= form_for :person do |f| %>
+    First name: <%= f.text_field :day %><br />
+    Last name : <%= f.text_field :hours_slept %><br />
+    <%= f.submit %>
+<% end %>
+     
+     
     </body>
 
 
